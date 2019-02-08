@@ -1,0 +1,16 @@
+{
+    "name": "digger/firetools",
+    "description": "Any good tools.",
+    "type": "library",
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "^2.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MrDigger",
+            "email": "mrdigger@mail.ru"
+        }
+    ],
+    "require": {}
+}
