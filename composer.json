@@ -1,7 +1,7 @@
 {
     "name": "digger/firetools",
     "description": "Some good tools.",
-    "keywords": ["debug", "simple", "fast"],
+    "keywords": ["debug", "simple", "fast", "php", "digger", "tools", "utils"],
     "type": "library",
     "require-dev": {
         "phpdocumentor/phpdocumentor": "^2.9"

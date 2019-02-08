@@ -48,10 +48,26 @@ class Debug
      */
     public static function log(...$args)
     {
-        $trace  = debug_backtrace();
-        $target = $trace[1]['class'] . $trace[1]['type'] . $trace[1]['function'] . ': ' . $trace[0]['line'];
-        $data   = !empty($args) ? $args : $trace[1]['args'];
+        $trace = debug_backtrace();
+
+        $targetInfoIndex = count($trace) > 1 ? 1 : 0;
+        $targetInfo      = $trace[ $targetInfoIndex ];
+        $targetFile      = basename($trace[0]['file']);
+        $lineNumber      = $trace[0]['line'];
+        $targetClass     = $targetInfo['class'] ?? '';
+        $targetType      = $targetInfo['type']  ?? '';
+        $targetFunction  = $targetInfo['function'] . '()';
+        if ($targetInfoIndex == 0) {
+            $targetClass    = '';
+            $targetType     = '';
+            $targetFunction = $targetFile;
+        }
+
+        $target = $targetClass . $targetType . $targetFunction . ': ' . $lineNumber;
+
+        $data = !empty($args) ? $args : $targetInfo['args'];
         if (count($data) == 1) { $data = $data[0]; }
+        if (empty($data)) { $data = null; }
 
         $content = "=== [ LOG ] === [ $target ]: " . print_r($data,1);
         static::save($content);
