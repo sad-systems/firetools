@@ -13,5 +13,8 @@
             "email": "mrdigger@mail.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload" : {
+        "psr-4": { "digger\\firetools\\": "src/" }
+    }
 }
