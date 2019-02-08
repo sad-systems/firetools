@@ -1,5 +1,5 @@
 # firetools
-> PHP library contains any good tools
+> PHP library contains some good tools from MrDigger
 
 The library includes the following classes:
 

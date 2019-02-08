@@ -1,6 +1,6 @@
 {
     "name": "digger/firetools",
-    "description": "Any good tools.",
+    "description": "Some good tools.",
     "keywords": ["debug", "simple", "fast"],
     "type": "library",
     "require-dev": {
