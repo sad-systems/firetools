@@ -8,7 +8,7 @@ namespace digger\firetools;
  *
  * PHP Version  7.1
  *
- * @package     debug
+ * @package     digger\firetools
  * @category	debug
  *
  * @copyright   2019, (c) SAD-Systems. All Rights Reserved.
