@@ -77,10 +77,10 @@ class Debug
      * Sets handlers to catch program errors and exceptions and save it to the log.
      *
      * Example of using:
-     *      Debug::catch(); // <--- At any place of code before a potential error
+     *      Debug::catchErrors(); // <--- At any place of code before a potential error
      *
      */
-    public static function catch()
+    public static function catchErrors()
     {
         register_shutdown_function(function()                                    { static::shutdownHandler(); });
         set_error_handler         (function($errno, $errstr, $errfile, $errline) { static::errorHandler($errno, $errstr, $errfile, $errline);});
