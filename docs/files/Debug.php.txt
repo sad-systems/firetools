@@ -15,7 +15,7 @@ namespace digger\firetools;
  * PHP Version  7.1
  *
  * @package     digger\firetools
- * @category    debug
+ * @category	  debug
  *
  * @author      MrDigger <mrdigger@mail.ru>
  * @created     07.02.2019

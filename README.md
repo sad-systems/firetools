@@ -9,7 +9,7 @@ The library includes the following classes:
 
 ## Documentation 
 
-[Detailed description of the classes](docs/index.php)
+[Detailed description of the classes](docs/index.html)
 
 ## Creators
 
